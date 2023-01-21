@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #7f53ac, #657ced);
+}
+h1 {
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+  color: blanchedalmond;
+  margin: auto;
+}
+div {
+  width: 500px;
+  margin: auto;
+  background-color: rgba(71, 53, 83, 0.349);
+}
+
+#inner {
+  text-align: center;
+}
+
+button {
+  font-size: 30px;
+  color: crimson;
+  background-color: darkgoldenrod;
+}
+
+input {
+  width: 50px;
+  padding: 10px;
+}
+
+.numberText {
+  font-size: 30px;
+}

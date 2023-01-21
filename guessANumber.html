@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="guessANumber.css" />
+  </head>
+  <body>
+    <div>
+      <h1>𝙂𝙪𝙚𝙨𝙨 𝙏𝙝𝙚 𝙉𝙪𝙢𝙗𝙚𝙧</h1>
+      <div id="inner">
+        <label class="numberText" for="number"
+          ><bold>★・・・・・・★</bold></label
+        >
+        <br />
+        <input id="guessNum" type="text" placeholder="1-10" />
+        <br />
+        <button onclick="play()" id="my_btn">Play</button>
+        <br />
+        <label class="numberText" for="number"
+          ><bold>★・・・・・・★</bold></label
+        >
+        <p id="msg1">No. Of Guesses: 0</p>
+        <p id="msg2">Guessed Numbers are: None</p>
+        <p id="msg3"></p>
+      </div>
+    </div>
+
+    <script src="guessANumber.js"></script>
+  </body>
+</html>

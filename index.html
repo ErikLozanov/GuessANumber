@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    body {
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    }
+    .container {
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      padding: 10px;
+      width: 50%;
+      margin: auto;
+      
+      
+    }
+    input[type="number"] {
+      width: 70px;
+      height: 30px;
+      font-size: 18px;
+      text-align: center;
+    }
+    button {
+      border-radius: 5px;
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 18px;
+      background-color: greenyellow;
+    }
+    .button:hover {
+        background-color: green;
+        font-size: 120%;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+        <input type="number" id="guess" placeholder="1-100">
+        <button class="button" onclick="checkGuess()">Guess!</button>
+        <p id="result"></p>
+      </div>
+  <script>
+    const target = Math.floor(Math.random() * 100) + 1;
+    let guesses = 0;
+  
+    function checkGuess() {
+      let guess = Number(document.getElementById("guess").value);
+      guesses++;
+      if (guess === target) {
+        document.getElementById("result").innerHTML = "Correct! You took " + guesses + " guesses.";
+      } else if (guess > target) {
+        document.getElementById("result").innerHTML = "Too high. Guess again.";
+      } else {
+        document.getElementById("result").innerHTML = "Too low. Guess again.";
+      }
+    }
+  </script>
+</body>
+</html>
